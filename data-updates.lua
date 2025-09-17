@@ -5,4 +5,4 @@ if mods["SchallCircuitGroup"] then
 end
 
 -- Give the active rail a red tint to better distinguish it from normal rails.
-require("data-updates/tint")
+require("data-updates.tint")
