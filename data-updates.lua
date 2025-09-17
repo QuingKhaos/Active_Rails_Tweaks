@@ -6,11 +6,9 @@ end
 
 -- Give the active rail a red tint to better distinguish it from normal rails.
 local active_rail = data.raw["rail-planner"]["active-rail"]
-local icon_to_use = active_rail.icon
-if not icon_to_use and active_rail.icons and active_rail.icons[1] and active_rail.icons[1].icon then
-  icon_to_use = active_rail.icons[1].icon
-end
-if icon_to_use then
+
+-- Check if the active rail has an icon (either as .icon or as the first .icons[1].icon)
+if (active_rail.icon) or (active_rail.icons and active_rail.icons[1] and active_rail.icons[1].icon) then
   -- Preserve all properties from the original icon definition
   local original_icon = nil
   if active_rail.icons and active_rail.icons[1] and active_rail.icons[1].icon then
