@@ -10,9 +10,11 @@ local icon_to_use = active_rail.icon
 if not icon_to_use and active_rail.icons and active_rail.icons[1] and active_rail.icons[1].icon then
   icon_to_use = active_rail.icons[1].icon
 end
-active_rail.icons = {
-  {
-    icon = icon_to_use,
-    tint = {r = 1, g = 0, b = 0, a = 0.5}
-  },
-}
+if icon_to_use then
+  active_rail.icons = {
+    {
+      icon = icon_to_use,
+      tint = {r = 1, g = 0, b = 0, a = 0.5}
+    },
+  }
+end
