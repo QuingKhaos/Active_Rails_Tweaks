@@ -25,8 +25,19 @@ if icon_to_use then
       scale = active_rail.scale
     }
   end
-  if original_icon then
+  if active_rail.icons and #active_rail.icons > 0 then
+    -- Deepcopy and tint all icon layers
+    local new_icons = {}
+    for i, icon_layer in ipairs(active_rail.icons) do
+      local icon_copy = table.deepcopy(icon_layer)
+      icon_copy.tint = {r = 1, g = 0, b = 0, a = 0.5}
+      table.insert(new_icons, icon_copy)
+    end
+    active_rail.icons = new_icons
+    active_rail.icon = nil
+  elseif original_icon then
     original_icon.tint = {r = 1, g = 0, b = 0, a = 0.5}
     active_rail.icons = { original_icon }
+    active_rail.icon = nil
   end
 end
