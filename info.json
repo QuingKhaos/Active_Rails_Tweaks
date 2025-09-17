@@ -8,6 +8,7 @@
   "factorio_version": "2.0",
   "dependencies": [
     "base >= 2.0.0",
-    "Active_Rails >= 0.0.2"
+    "Active_Rails >= 0.0.2",
+    "? SchallCircuitGroup >= 2.0.0"
   ]
 }
