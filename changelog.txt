@@ -3,3 +3,4 @@ Version: 1.0.0
 Date: ????
   Changes:
     - [item=active-rail] Better subgroup placement if Schall Circuit Group is installed.
+    - [item=active-rail] Give the active rail a red tint to better distinguish it from normal rails.
