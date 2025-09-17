@@ -7,7 +7,8 @@ if (active_rail.icon) or (active_rail.icons and active_rail.icons[1] and active_
   -- If there are multiple icon layers, tint all of them
   if active_rail.icons and #active_rail.icons > 0 then
     for i, icon_layer in ipairs(active_rail.icons) do
-      ---@diagnostic disable: unknown-symbol
+      -- table.deepcopy is provided by the Factorio modding environment, but may be flagged as unknown by some language servers.
+      ---@diagnostic disable-next-line: undefined-global
       local icon_copy = table.deepcopy(icon_layer)
 
       icon_copy.tint = {r = 1, g = 0, b = 0, a = 0.5}
