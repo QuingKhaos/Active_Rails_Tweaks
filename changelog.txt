@@ -4,3 +4,5 @@ Date: ????
   Changes:
     - [item=active-rail] Better subgroup placement if Schall Circuit Group is installed.
     - [item=active-rail] Give the active rail a red tint to better distinguish it from normal rails.
+  Features:
+    - New technology [technology=active-rails] to unlock the active rail, instead of it being available from the start.
