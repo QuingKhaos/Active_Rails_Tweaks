@@ -1,15 +1,14 @@
 {
   "name": "Active_Rails_Tweaks",
   "title": "Active Rails Tweaks",
-  "description": "Opinionated tweaks to Active Rails.",
+  "description": "[DEPRECATED] Functionality migrated to QuingKhaos' Circuitry Tweaks.",
   "author": "QuingKhaos",
-  "homepage": "",
-  "version": "1.0.1",
+  "homepage": "https://discord.gg/SYmkaDjFCt",
+  "version": "1.0.2",
   "factorio_version": "2.0",
   "dependencies": [
     "base >= 2.0.0",
-    "flib >= 0.16.3",
-    "Active_Rails >= 0.0.2",
-    "? SchallCircuitGroup >= 2.0.0"
+
+    "khaoscircuitry >= 1.5.0"
   ]
 }
